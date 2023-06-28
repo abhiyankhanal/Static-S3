@@ -11,7 +11,7 @@ The following document explains the steps to deploy a S3 Static Website using Cl
 
 1. Clone the Git repository to your local machine.
 2. Navigate to the `cloudformation` directory in the terminal.
-3. Modify the variables `CERT`, `HostedZoneResourceID`, and `DomainName` in the Makefile to appropriate values. 
+3. Modify the variables `CERT`, `HostedZoneResourceID`, and `DomainName` in the Makefile to appropriate values. `CERT` is required only with custom cert. In that case rename the template `cloudformation_with_custom_cert` to `cloudformation.yaml` and used the commented make command.
 4. Run the following command in the terminal to create the stack:
 ```make create-stack```
 5. To update the existing stack with any changes made to the CloudFormation template file, run the following command in the terminal:
